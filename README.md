@@ -4,33 +4,6 @@
 
 macOS 双击 `install-mac.command`；Windows 双击 `install-windows.bat` 后按 UAC 提示授权；Linux（deb 包安装）在终端运行 `./install-linux.sh`。脚本会给 Claude Desktop 添加中文语言选项并安装中文界面资源。
 
-本项目支持官方账号和第三方 API，但不同安装模式覆盖的界面与 Cowork 兼容性不同，请先阅读下方的模式说明。第三方 API 配置可参考 [这篇教程](https://linux.do/t/topic/2032192)。
-
-## 赞助商
-
-<details open>
-<summary>点击折叠</summary>
-<table width="100%">
-<tr>
-<td width="250" align="center" valign="middle"><a href="https://tokenmetro.com"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/images/tokenmetro-dark.png"><img src="docs/images/tokenmetro-light.png" alt="TokenMetro" width="216"></picture></a></td>
-<td valign="middle"><strong>TokenMetro</strong> - 一家计费透明、自建号池的中转站。<br>
-相对官方价格：GPT 1 折，Gemini 一次 5分，DeepSeek0.1折。<br>
-明码标价，显示多少扣多少，不玩汇率魔术；自建号池，拒绝掺水。<br>
-私信客服领取1r体验金，一键上车：<a href="https://tokenmetro.com">https://tokenmetro.com</a></td>
-</tr>
-<tr>
-<td width="250" align="center" valign="middle"><a href="https://www.oxoapi.com"><img src="docs/images/oxoapi.png" alt="OXOAPI" width="151"></a></td>
-<td valign="middle"><strong>OXOAPI</strong> - 高质量国模自部署资源，AI 模型统一接口入口。热门国产模型 DeepSeek、Kimi、GLM 低至 4.5-6 折，海外模型低至 2.5 折；官网实时公开报价，价格自动刷新、通道状态透明可见；支持开具发票，企业采购更省心。注册即用：<a href="https://www.oxoapi.com">www.oxoapi.com</a>，完整价格表：<a href="https://www.oxoapi.com/pricing">www.oxoapi.com/pricing</a></td>
-</tr>
-</table>
-
-
-</details>
-
-<p align="center"><strong>遇到问题请及时反馈，欢迎扫码加入 claude desktop 交流。</strong></p>
-
-<p align="center"><img src="docs/images/wechat-group.png" alt="claude desktop 交流群二维码" width="360"></p>
-
 ## 界面截图
 
 ![Claude Desktop 中文界面截图](docs/images/claude-desktop-zh-cn-home.png) ![Claude Desktop 中文设置界面截图](docs/images/claude-desktop-zh-cn-settings.png)
@@ -205,16 +178,6 @@ git pull
 - macOS 两种安装模式都会对修改后的应用做本机 ad-hoc 重签名；Windows 模式 2 会破坏 `Claude.exe` 的 Authenticode 签名。签名相关功能是否可用，应以当前 Claude Desktop 版本的实际验证结果为准。
 - Linux 仅支持官方 deb 包安装（`/usr/lib/claude-desktop`）；AppImage、Flatpak、Snap 等安装方式的目录结构不同，暂不支持。Linux 脚本不做重签名，暂不包含前端 bundle 硬编码文本汉化、主进程菜单汉化和第三方网关模型名校验绕过。
 - 在线账号页面由 `claude.ai` 动态更新，DOM 汉化依赖英文原文匹配；上游文案变化后可能出现少量漏翻，需要更新本项目词表。
-
-## Star History
-
-<a href="https://www.star-history.com/?type=date&repos=javaht%2Fclaude-desktop-zh-cn">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=javaht/claude-desktop-zh-cn&type=date&theme=dark&legend=top-left&sealed_token=nC4gK9npC6J22iJX6ySvcDb9bLLzJi92ny-y20orz28GWvjXDHLZDuo0vqfJ7odAe7h_TdxZVOFEAXl290Auc3da0o8fLzdK6F6vAbUoM1d3_L0A7tklYQ" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=javaht/claude-desktop-zh-cn&type=date&legend=top-left&sealed_token=nC4gK9npC6J22iJX6ySvcDb9bLLzJi92ny-y20orz28GWvjXDHLZDuo0vqfJ7odAe7h_TdxZVOFEAXl290Auc3da0o8fLzdK6F6vAbUoM1d3_L0A7tklYQ" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=javaht/claude-desktop-zh-cn&type=date&legend=top-left&sealed_token=nC4gK9npC6J22iJX6ySvcDb9bLLzJi92ny-y20orz28GWvjXDHLZDuo0vqfJ7odAe7h_TdxZVOFEAXl290Auc3da0o8fLzdK6F6vAbUoM1d3_L0A7tklYQ" />
- </picture>
-</a>
 
 ## 免责声明
 
